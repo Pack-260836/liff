@@ -33,7 +33,7 @@
     }
     async function main(){
       await liff.init({ liffId: "1656657734-K2gkRRQe"})
-      if(liff.isLoffedIn()){
+      if(liff.isLoggedIn()){
         getUserProfile()
       } else {
         liff.login({ redirectUri: "https://pack-260836.github.io/liff/path"})
