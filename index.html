@@ -103,12 +103,18 @@
 
   </body>
 </html>
+<script src="https://static.line-scdn.net/liff/edge/2/sdk.js"></script>
 <!-- Compiled and minified JavaScript -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
 <!-- Import autoNumeric -->
 <script src="https://cdn.jsdelivr.net/npm/autonumeric@4.1.0"></script>
 
+<script src="js/vconsole.min.js"></script>
+<script>
+  var vConsole = new VConsole()
+  console.log("Hello World!")
+</script>
 <!-- Start Script For Get Form Values and Calculation -->
 <script>
   function runApp() {
@@ -221,8 +227,7 @@
       downPayment,
       loan,
       resultCalculate
-    ) 
-    {
+    ){
       let carYearTxt = new Date().getFullYear() - carYear;
       let carPriceTxt = numberToString(carPrice);
       let downPaymentTxt = numberToString(downPayment);
